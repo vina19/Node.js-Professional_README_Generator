@@ -1,0 +1,19 @@
+{
+  "name": "node.js-professional_readme_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vina19/Node.js-Professional_README_Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vina19/Node.js-Professional_README_Generator/issues"
+  },
+  "homepage": "https://github.com/vina19/Node.js-Professional_README_Generator#readme"
+}
