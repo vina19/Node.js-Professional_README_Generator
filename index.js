@@ -11,7 +11,7 @@ inquirer
         {
             type: 'input',
             name: 'description',
-            message: "Please give a short description of your project: ",
+            message: 'Please give a short description of your project:',
         },
         {
             type: 'input',
@@ -21,12 +21,12 @@ inquirer
         {
             type: 'input',
             name: 'usage',
-            message: 'Please provide instructions and examples for use: ',
+            message: 'Please provide instructions and examples for use:',
         },
         {
             type: 'input',
             name: 'constributing',
-            message: 'Please provide quidelines for other developers who want to contribute to your project: ',
+            message: 'Please provide quidelines for other developers who want to contribute to your project:',
         },
         {
             type: 'input',
