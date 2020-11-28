@@ -49,4 +49,11 @@ inquirer
             name: 'email',
             message: 'What is your email address?',
         }
-    ]);
+    ])
+    .then((data) => {
+
+        fs.writeFile(`${data.title.toLowerCase().split(' ').json('')}README.md`, generateReadme(data), (err) =>
+            err ? console.log(err) : console.log('Success!')
+        );
+
+    });
