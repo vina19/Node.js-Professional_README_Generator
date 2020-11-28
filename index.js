@@ -21,7 +21,7 @@ inquirer
         {
             type: 'input',
             name: 'usage',
-            message: 'Please provide instructions and ecamples for use: ',
+            message: 'Please provide instructions and examples for use: ',
         },
         {
             type: 'input',
@@ -52,8 +52,13 @@ inquirer
     ])
     .then((data) => {
 
-        fs.writeFile(`${data.title.toLowerCase().split(' ').json('')}README.md`, generateReadme(data), (err) =>
+        fs.writeFile(`${data.username.toLowerCase().split(' ').join('')}README.md`, generateReadme(data), (err) =>
             err ? console.log(err) : console.log('Success!')
         );
 
     });
+    
+const generateReadme = (project) =>  
+`# ${project.title}
+## Description
+#### ${project.description}`;
