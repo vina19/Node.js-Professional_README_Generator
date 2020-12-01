@@ -50,6 +50,11 @@ inquirer
         },
         {
             type: 'input',
+            name: 'githubLink',
+            message: 'What is the link to your GitHub project repository?',
+        },
+        {
+            type: 'input',
             name: 'email',
             message: 'What is your email address?',
         }
