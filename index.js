@@ -37,7 +37,11 @@ inquirer
             type: 'list',
             name: 'license',
             message : 'Which license should your project have?',
-            choices: ['MIT License', 'GNU AGPLv3', 'Apache License 2.0', 'Boost Software License 1.0'],
+            choices: [
+                'MIT License', 
+                'GNU AGPLv3', 
+                'Apache License 2.0', 
+                'Boost Software License 1.0'],
         },
         {
             type: 'input',
@@ -60,11 +64,16 @@ inquirer
     
 const generateReadme = (project) =>  
 `# ${project.title}
-#### ${project.license} badge
+### ${project.license} badge
 ## Description
 #### ${project.description}
 ## Table of Contents
-#### contain of the links to the corresponding section of the README
+#### 1. [Installation](##Installation)
+#### 2. [Usage](##Usage)
+#### 3. [License](##License)
+#### 4. [Contributing](##Constributing)
+#### 5. [Tests](##Tests)
+#### 6. [Questions](##Questions)
 ## Installation
 #### ${project.installation}
 ## Usage
