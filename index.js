@@ -60,5 +60,21 @@ inquirer
     
 const generateReadme = (project) =>  
 `# ${project.title}
+#### ${project.license} badge
 ## Description
-#### ${project.description}`;
+#### ${project.description}
+## Table of Contents
+#### contain of the links to the corresponding section of the README
+## Installation
+#### ${project.installation}
+## Usage
+#### ${project.usage}
+## License
+#### ${project.license} license notice of which license the application is covered under
+## Contributing
+#### ${project.contributing}
+## Tests
+#### ${project.tests}
+## Questions
+#### ${project.username} and the link to its github page
+### Contact me ${project.email} for more additional questions.`;
