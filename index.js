@@ -69,7 +69,7 @@ inquirer
     
 const generateReadme = (project) =>  
 `# ${project.title}
-### ${project.license} badge
+### ${generateLicenseBadge(project.license)}
 ## Description
 #### ${project.description}
 ## Table of Contents
