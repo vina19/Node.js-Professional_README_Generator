@@ -90,5 +90,5 @@ const generateReadme = (project) =>
 ## Tests
 #### ${project.tests}
 ## Questions
-#### ${project.username} and the link to its github page
+#### [${project.username}](${project.githubLink})
 ### Contact me ${project.email} for more additional questions.`;
