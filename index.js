@@ -62,11 +62,15 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
+    
+    fs.writeFile(fileName, data, (err) =>
+        err ? console.log(err) : console.log('Success!')
+    );
 }
 
 // function to initialize program
 function init() {
-
+   
 }
 
 // function call to initialize program
@@ -79,9 +83,7 @@ inquirer
     ])
     .then((data) => {
 
-        fs.writeFile(`${data.username.toLowerCase().split(' ').join('')}README.md`, generateReadme(data), (err) =>
-            err ? console.log(err) : console.log('Success!')
-        );
+   `${data.username.toLowerCase().split(' ').join('')}README.md`     
 
     });
     
