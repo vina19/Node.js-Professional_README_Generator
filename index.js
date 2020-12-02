@@ -99,15 +99,15 @@ const generateLicenseBadge = (license) => {
         return `![MIT License](https://img.shields.io/static/v1?label=License&message=MIT&color=yellow)`;
     }
     else if (license === 'GNU AGPLv3') {
-        return `![GNU AGPLv3 License](https://img.shields.io/static/v1?label=License&message=GNUAGPLv3&color=yellow)`;
+        return `![GNU AGPLv3 License](https://img.shields.io/static/v1?label=License&message=GNU+AGPLv3&color=yellow)`;
     }
     else if (license === 'Apache License 2.0') {
-        return `![Apache License 2.0 License](https://img.shields.io/static/v1?label=License&message=ApacheLicense2.0&color=yellow)`;
+        return `![Apache License 2.0 License](https://img.shields.io/static/v1?label=License&message=Apache+License+2.0&color=yellow)`;
     }
     else if (license === 'Boost Software License 1.0') {
-        return `![Boost Software License 1.0](https://img.shields.io/static/v1?label=License&message=BoostSoftwareLicense1.0&color=yellow)`;
+        return `![Boost Software License 1.0](https://img.shields.io/static/v1?label=License&message=Boost+Software+License+1.0&color=yellow)`;
     }
-    else if (license === null) {
-        return `![No License](https://img.shields.io/static/v1?label=License&message=NoLicense&color=yellow)`;
+    else if (license === '' || null) {
+        return `![No License](https://img.shields.io/static/v1?label=License&message=No+License&color=yellow)`;
     };
 };
