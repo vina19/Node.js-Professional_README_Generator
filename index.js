@@ -108,6 +108,6 @@ const generateLicenseBadge = (license) => {
         return `![Boost Software License 1.0](https://img.shields.io/static/v1?label=License&message=Boost+Software+License+1.0&color=yellow)`;
     }
     else if (license === '' || null) {
-        return `![No License](https://img.shields.io/static/v1?label=License&message=No+License&color=yellow)`;
+        return `![Unlicense](https://img.shields.io/static/v1?label=License&message=Unlicense&color=yellow)`;
     };
 };
