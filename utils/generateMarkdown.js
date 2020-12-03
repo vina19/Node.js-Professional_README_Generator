@@ -23,6 +23,26 @@ function generateMarkdown(project) {
         #### ${project.tests}
         ## Questions
         #### GitHub profile: [${project.username}](${project.githubLink})
-        ### Contact me ${project.email} for more additional questions.`};
+        ### Contact me ${project.email} for more additional questions.`
+};
+
+const generateLicenseBadge = (license) => {
+   
+    if (license === 'MIT License') {
+        return `![MIT License](https://img.shields.io/static/v1?label=License&message=MIT&color=yellow)`;
+    }
+    else if (license === 'GNU AGPLv3') {
+        return `![GNU AGPLv3 License](https://img.shields.io/static/v1?label=License&message=GNU+AGPLv3&color=yellow)`;
+    }
+    else if (license === 'Apache License 2.0') {
+        return `![Apache License 2.0 License](https://img.shields.io/static/v1?label=License&message=Apache+License+2.0&color=yellow)`;
+    }
+    else if (license === 'Boost Software License 1.0') {
+        return `![Boost Software License 1.0](https://img.shields.io/static/v1?label=License&message=Boost+Software+License+1.0&color=yellow)`;
+    }
+    else if (license === '' || null) {
+        return `![Unlicense](https://img.shields.io/static/v1?label=License&message=Unlicense&color=yellow)`;
+    };
+};
 
 module.exports = generateMarkdown;
