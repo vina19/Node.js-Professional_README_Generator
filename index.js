@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // array of questions for user
 const questions = [
@@ -51,7 +52,7 @@ const questions = [
     {
         type: 'input',
         name: 'githubLink',
-        message: 'What is the link to your GitHub project repository?',
+        message: 'What is the link to your GitHub profile?',
     },
     {
         type: 'input',
@@ -113,7 +114,7 @@ const generateReadme = (project) =>
 ## Tests
 #### ${project.tests}
 ## Questions
-#### [${project.username}](${project.githubLink})
+#### GitHub profile: [${project.username}](${project.githubLink})
 ### Contact me ${project.email} for more additional questions.`;
 
 const generateLicenseBadge = (license) => {
