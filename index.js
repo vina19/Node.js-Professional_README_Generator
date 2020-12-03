@@ -62,30 +62,33 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    
+
     fs.writeFile(fileName, data, (err) =>
         err ? console.log(err) : console.log('Success!')
     );
-}
+};
 
 // function to initialize program
 function init() {
+
+    inquirer.prompt(questions).then((data) => {
+
+        const generateData = generateMarkdown(data);
+
+        writeToFile(`${data.username.toLowerCase().split(' ').join('')}README.md`, generateData);
+    });
    
-}
+};
 
 // function call to initialize program
 init();
 
 
-inquirer
-    .prompt([
+
+    
         
-    ])
-    .then((data) => {
 
-   `${data.username.toLowerCase().split(' ').join('')}README.md`     
-
-    });
+    
     
 const generateReadme = (project) =>  
 `# ${project.title}
