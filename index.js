@@ -46,6 +46,16 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'name',
+        message: 'What is your name?',
+    },
+    {
+        type: 'number',
+        name: 'year',
+        message: 'What year is this project created?',
+    },
+    {
+        type: 'input',
         name: 'username',
         message: 'What is your GitHub username?',
     },
