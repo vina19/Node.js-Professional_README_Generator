@@ -1,3 +1,5 @@
+const generateMITLicense = require("../license/MIT");
+
 // function to generate markdown for README
 function generateMarkdown(project) {
   return `# ${project.title}
@@ -16,7 +18,7 @@ function generateMarkdown(project) {
 ## Usage
 #### ${project.usage}
 ## License
-#### This application is covered under ${generateLicenseNotice(project.license)}.
+#### This application is covered under ${generateLicenseNotice(project.license, project.name, project.year)}.
 ## Contributing
 #### ${project.contributing}
 ## Tests
@@ -45,10 +47,10 @@ const generateLicenseBadge = (license) => {
     };
 };
 
-const generateLicenseNotice = (license) => {
+const generateLicenseNotice = (license, name, year) => {
 
     if (license === 'MIT License') {
-        return `![MIT License]()`;
+        return `![MIT License](${generateMITLicense(name, year)})`;
     }
     else if (license === 'GNU AGPLv3') {
         return `![GNU AGPLv3 License](https://choosealicense.com/licenses/agpl-3.0/)`;
