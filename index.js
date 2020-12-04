@@ -1,3 +1,4 @@
+// npm require inquirer, file system, and the generateMarkdown.js file.
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
@@ -74,6 +75,9 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
 
+    // using file system package to write a README file.
+    // throw an error if a problem occured when creating the file and 
+    // throw Success message if there is no problem when creating the file.
     fs.writeFile(fileName, data, (err) =>
         err ? console.log(err) : console.log('Success!')
     );
@@ -82,10 +86,16 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
 
+    // using inquirer.prompt and set the prompt to the questions to the user array
+    // and then if all the questions prompt displayed and answered then call the 
+    // generateMarkdown function which returning the README file templated and 
+    // set that function as data parameter when creating the README file.
     inquirer.prompt(questions).then((data) => {
 
         const generateData = generateMarkdown(data);
 
+        // using writeToFile method to create the README file.
+        // writeToFile(file, data).
         writeToFile(`${data.username.toLowerCase().split(' ').join('')}README.md`, generateData);
     });
    

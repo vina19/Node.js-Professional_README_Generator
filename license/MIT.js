@@ -1,3 +1,4 @@
+// function to generate the MIT license when the user pick MIT license as their application license
 function generateMITLicense(name, year) {
 
     return `MIT License
@@ -23,4 +24,5 @@ function generateMITLicense(name, year) {
     SOFTWARE.`
 };
 
+// Exporting this module
 module.exports = generateMITLicense;

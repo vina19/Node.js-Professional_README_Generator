@@ -1,6 +1,8 @@
+// npm require the MIT.js file
 const generateMITLicense = require("../license/MIT");
 
 // function to generate markdown for README
+// returning README template with the data from the user input 
 function generateMarkdown(project) {
   return `# ${project.title}
 ### ${generateLicenseBadge(project.license)}
@@ -28,6 +30,9 @@ function generateMarkdown(project) {
 ### Contact me ${project.email} for more additional questions.`
 };
 
+// Function that create the license badge based on the 
+// if statement when the user choose one of the license options for the application
+// then the license badge will be displayed on the top of the README file.
 const generateLicenseBadge = (license) => {
    
     if (license === 'MIT License') {
@@ -47,6 +52,7 @@ const generateLicenseBadge = (license) => {
     };
 };
 
+// Function to create a notice which license this application use that will go inside the License section
 const generateLicenseNotice = (license, name, year) => {
 
     if (license === 'MIT License') {
@@ -66,4 +72,5 @@ const generateLicenseNotice = (license, name, year) => {
     };
 };
 
+// Export this module
 module.exports = generateMarkdown;
