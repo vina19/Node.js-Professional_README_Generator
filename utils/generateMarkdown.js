@@ -50,16 +50,16 @@ const generateLicenseBadge = (license) => {
 const generateLicenseNotice = (license, name, year) => {
 
     if (license === 'MIT License') {
-        return `![MIT License](${generateMITLicense(name, year)})`;
+        return `${generateMITLicense(name, year)}`;
     }
     else if (license === 'GNU AGPLv3') {
-        return `![GNU AGPLv3 License](https://choosealicense.com/licenses/agpl-3.0/)`;
+        return `[GNU AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)`;
     }
     else if (license === 'Apache License 2.0') {
-        return `![Apache License 2.0 License](https://choosealicense.com/licenses/apache-2.0/)`;
+        return `[Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)`;
     }
     else if (license === 'Boost Software License 1.0') {
-        return `![Boost Software License 1.0](https://choosealicense.com/licenses/bsl-1.0/)`;
+        return `[Boost Software License 1.0](https://choosealicense.com/licenses/bsl-1.0/)`;
     }
     else if (license === '' || null) {
         return `Unlicense`;
