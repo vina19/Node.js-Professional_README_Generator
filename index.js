@@ -26,7 +26,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'constributing',
+        name: 'contributing',
         message: 'Please provide quidelines for other developers who want to contribute to your project:',
     },
     {
