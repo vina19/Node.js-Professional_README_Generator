@@ -15,7 +15,13 @@
     git@github.com:vina19/CSS_Bootstrap-Responsive_Portfolio.git
 
 #### 2. Access the folder with your favorite code editor.
-#### 3. In your terminal, npm i or npm install
+#### 3. In your terminal, run:
+    
+    npm i or npm install
+
+#### 4. After successfully installed, run:
+
+    node index.js
 
 ## Usage
 #### [Demo](https://drive.google.com/file/d/1uO9xm6oe8RnXkhf0DI8fsdyX6hTBKTbb/view)
