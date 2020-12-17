@@ -12,7 +12,7 @@
 ## Installation
 #### 1. In your terminal, clone this to the folder of your choice.
 
-    git@github.com:vina19/CSS_Bootstrap-Responsive_Portfolio.git
+    git@github.com:vina19/Node.js-Professional_README_Generator.git
 
 #### 2. Access the folder with your favorite code editor.
 #### 3. In your terminal, run:
